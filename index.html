@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="container">
+    <div class="wrapper">
+      <form id="formInput" class="form_wrapper" action="">
+        <!-- if positing to a server use action -->
+        <!-- onkeypress is a method that works well in inputing something like an EventListner -->
+        <div class="formInputContainer">
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" value="" maxlength="14" />
+        </div>
+        <div class="formInputContainer">
+          <label for="fname">Last name:</label><br />
+          <input type="text" id="lname" name="lname" value="" maxlength="14" />
+        </div>
+
+        <div class="formInputPhoneContainer flex_number">
+          <div>
+            <label for="fname">Phone Number:</label><br />
+            <input
+              type="tel"
+              id="pname"
+              name="pname"
+              value=""
+              onkeypress="myFunction()"
+              maxlength="14"
+            />
+          </div>
+          <div class="operator">
+            <img id="airtel" src="airtel.png" alt="" />
+            <img id="glo" src="glo.jpg" alt="" />
+            <img id="mtn" src="New-mtn-logo.webp" alt="" />
+          </div>
+        </div>
+        <br />
+        <p id="showNotification"></p>
+        <input type="submit" class="btn_submit" value="Submit" />
+      </form>
+    </div>
+
+    <script src="script.js" defer></script> 
+  </body>
+</html>

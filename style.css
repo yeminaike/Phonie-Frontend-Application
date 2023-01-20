@@ -1,0 +1,112 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+#container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(117, 19, 93, 0.73)
+    ),
+    url("bgImg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_wrapper {
+  width: 600px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formInputContainer, .formInputPhoneContainer {
+  margin-top: 20px;
+}
+.formInputContainer input {
+  /* the input used here is the child inside the div */
+  height: 30px;
+  width: 300px;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif !important;
+  padding: 0px 10px;
+}
+
+.formInputPhoneContainer input {
+   /* the input used here is the child inside the div */
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif !important;
+    padding: 0px 10px;
+  }
+  
+
+.flex_number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn_submit {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  width: 300px;
+  height: 40px;
+  background: #0cebeb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #29ffc6,
+    #20e3b2,
+    #0cebeb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+
+  /* or */
+  /* background: linear-gradient(
+    to right,
+    #29ffc6,
+    #20e3b2,
+    #0cebeb
+  ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.operator {
+  /* display: flex; */
+  margin-top: 20px;
+}
+.operator img {
+  width: 40px;
+  height: 40px;
+}
+
+#airtel {
+  display: none;
+}
+#glo {
+  display: none;
+}
+#mtn {
+  display: none;
+}
